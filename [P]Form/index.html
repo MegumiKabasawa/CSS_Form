@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab_5 Survey</title>
+
+  <!--  Add our CSS file  -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!--  Add favicon  -->
+  <link rel="shortcut icon" href="image/ram.svg" type="image/x-icon">
+
+  <!-- Add our Google fonts -->
+
+</head>
+
+<body>
+  <header>
+    <h1>Megumi Software Survey</h1>
+    <h2>Thank you for your cooperation!</h2>
+  </header>
+
+  <main>
+    <!-- <p>Here is gonna be main contents inseide</p> -->
+    <div class="container">
+    <form action="/submit_form" method="get">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" autofocus>
+        <!-- 1. Text and Password Input -->
+        <label for="password">password:</label>
+        <input type="text" id="password" name="password" placeholder="Input your password within 8 charactors"  minlength="8">
+
+        <!-- 2. Radio Buttons -->
+        <br><br>
+        <fieldset>
+        <legend>Please select your gender:</legend>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+        <input type="radio" id="X" name="gender" value="X">
+        <label for="X">X</label>
+        </fieldset>
+        <!-- 3. Checkbox Inputs -->
+        <br><br>
+        <fieldset>
+        <legend>Please select the languages you know:</legend>
+        <input type="checkbox" id="language1" name="language1" value="HTML">
+        <label for="language1"> I know HTML</label>
+        <input type="checkbox" id="language2" name="language2" value="CSS">
+        <label for="language2"> I know CSS</label>
+        <input type="checkbox" id="language3" name="language3" value="JavaScript">
+        <label for="language3"> I know JavaScript</label>
+        </fieldset>
+        <!-- 4. File Input -->
+        <br><br>
+        <fieldset>
+            <legend>Please attempt your file</legend>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        </fieldset>
+        <!-- 5. Date Input -->
+        <br><br>
+        <fieldset>
+        <legend>Please select your birthday</legend>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        </fieldset>
+
+        <!-- 1. Using the pattern attribute ← (hint use regex) -->
+        <br><br>
+        <fieldset>
+        <legend>Please select your phone number</legend>
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+        </fieldset>
+
+        <!-- 6. Email Input -->
+        <br><br>
+        <fieldset>
+        <legend>Please input your Email Address</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="megumi33@gmail.com" >
+    </fieldset>
+        <!-- 7. URL Input -->
+        <br><br>
+        <fieldset>
+        <legend>Please add your website</legend>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+    </fieldset>
+        <!-- 8. Number Input -->
+        <!-- 2.Working with min, max, and step attribute -->
+        <br><br>
+        <fieldset>
+        <legend>Please select your age</legend>
+        <label for="age"> Age (between 18 and 99):</label>
+        <input type="number" id="age" name="age" min="18" max="99" step="1">
+    </fieldset>
+        <!-- 9. Range Input -->
+        <br><br>
+        <fieldset>
+        <legend>Please select your satisfaction level:</legend><br>
+        <label for="vol">Satisfaction level (between 0 and 50):</label><br><br>
+        <input type="range" id="vol" name="vol" min="0" max="10" class="slider">
+    </fieldset>
+    <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Megumi Survey. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
+ <!--         
+        <p>Please select your favorite Anime:</p>
+        <input type="radio" id="SPYxFAMILY" name="fav_Anime" value="SPYxFAMILY">
+        <label for="SPYxFAMILY">SPYxFAMILY</label><br>
+        <input type="radio" id="YourName" name="fav_Anime" value="Your Name">
+        <label for="Your Name">Your Name</label><br>
+        <input type="radio" id="HUNTERxHUNTER" name="fav_Anime" value="HUNTERxHUNTER">
+        <label for="HUNTERxHUNTER">HUNTERxHUNTER</label><br>
+        <input type="radio" id="Spirited Away" name="fav_Anime" value="Spirited Away">
+        <label for="Spirited Away">Spirited Away</label><br>
+        <input type="radio" id="OnePiece" name="fav_Anime" value="OnePiece">
+        <label for="OnePiece">OnePiece</label><br>
+        <input type="radio" id="JujutsuKaisen" name="fav_Anime" value="JujutsuKaisen">
+        <label for="JujutsuKaisen">Jujutsu Kaisen</label> -->
